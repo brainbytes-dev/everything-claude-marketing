@@ -3,7 +3,7 @@
   "name": "everything-claude-marketing",
   "description": "Production-ready marketing intelligence plugin — 18 specialized agents, 55+ domain skills, and 22 commands covering every marketing discipline",
   "owner": {
-    "name": "Henrik",
+    "name": "Brain Bytes",
     "email": ""
   },
   "metadata": {
@@ -16,7 +16,7 @@
       "description": "18 specialized marketing agents, 55+ skills, 22 commands, and production-ready hooks for campaign planning, copywriting, SEO, analytics, and growth experimentation",
       "version": "1.0.0",
       "author": {
-        "name": "Henrik"
+        "name": "Brain Bytes"
       },
       "license": "MIT",
       "keywords": [

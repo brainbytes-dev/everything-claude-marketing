@@ -508,7 +508,7 @@ See: `examples/agency-CLAUDE.md`
 
 ## Resources
 
-- [Everything Claude Marketing (GitHub)](https://github.com/YOUR_USERNAME/everything-claude-marketing)
+- [Everything Claude Marketing (GitHub)](https://github.com/brainbytes-dev/everything-claude-marketing)
 - [Everything Claude Code (inspiration)](https://github.com/affaan-m/everything-claude-code) by Affaan Mustafa
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
 - [MCP Overview](https://modelcontextprotocol.io)

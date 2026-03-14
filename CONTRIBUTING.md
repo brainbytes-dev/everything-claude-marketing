@@ -52,7 +52,7 @@ Thanks for wanting to contribute! This plugin is a community resource for market
 
 ```bash
 # 1. Fork and clone
-gh repo fork YOUR_USERNAME/everything-claude-marketing --clone
+gh repo fork brainbytes-dev/everything-claude-marketing --clone
 cd everything-claude-marketing
 
 # 2. Create a branch

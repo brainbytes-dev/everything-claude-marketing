@@ -1,9 +1,10 @@
 # Everything Claude Marketing
 
-[![Stars](https://img.shields.io/github/stars/YOUR_USERNAME/everything-claude-marketing?style=flat)](https://github.com/YOUR_USERNAME/everything-claude-marketing/stargazers)
-[![Forks](https://img.shields.io/github/forks/YOUR_USERNAME/everything-claude-marketing?style=flat)](https://github.com/YOUR_USERNAME/everything-claude-marketing/network/members)
-[![Contributors](https://img.shields.io/github/contributors/YOUR_USERNAME/everything-claude-marketing?style=flat)](https://github.com/YOUR_USERNAME/everything-claude-marketing/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/brainbytes-dev/everything-claude-marketing?style=flat)](https://github.com/brainbytes-dev/everything-claude-marketing/stargazers)
+[![Forks](https://img.shields.io/github/forks/brainbytes-dev/everything-claude-marketing?style=flat)](https://github.com/brainbytes-dev/everything-claude-marketing/network/members)
+[![Contributors](https://img.shields.io/github/contributors/brainbytes-dev/everything-claude-marketing?style=flat)](https://github.com/brainbytes-dev/everything-claude-marketing/graphs/contributors)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=flat&logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/brainbytes)
 
 > **18 specialized agents** | **72 domain skills** | **22 commands** | **Every marketing discipline covered**
 
@@ -51,7 +52,7 @@ Inspired by [Everything Claude Code](https://github.com/affaan-m/everything-clau
 claude plugins install everything-claude-marketing
 
 # Or clone and install locally
-git clone https://github.com/YOUR_USERNAME/everything-claude-marketing.git
+git clone https://github.com/brainbytes-dev/everything-claude-marketing.git
 cd everything-claude-marketing
 claude plugins install .
 ```

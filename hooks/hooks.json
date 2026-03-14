@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "notification",
+            "message": "Remember: Check brand voice guidelines before writing marketing content. Ensure compliance with GDPR/CAN-SPAM/FTC rules."
+          }
+        ],
+        "description": "Remind to check brand voice and compliance before writing content"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hooks/brand-voice-check.js\"",
+            "timeout": 10
+          }
+        ],
+        "description": "Check written content for brand voice violations and marketing buzzwords"
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hooks/compliance-check.js\"",
+            "timeout": 10
+          }
+        ],
+        "description": "Check for compliance issues (FTC disclosure, CAN-SPAM, health/financial claims)"
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hooks/cta-check.js\"",
+            "timeout": 10
+          }
+        ],
+        "description": "Verify marketing content includes a clear call to action"
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hooks/post-content-quality.js\"",
+            "timeout": 10,
+            "async": true
+          }
+        ],
+        "description": "Check content quality (readability, passive voice, weasel words)"
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hooks/session-start.js\""
+          }
+        ],
+        "description": "Welcome message with available commands and brand guidelines reminder"
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "notification",
+            "message": "Session complete. If marketing assets were created, ensure they go through brand review before publishing."
+          }
+        ],
+        "description": "End-of-session reminder for brand review"
+      }
+    ]
+  }
+}

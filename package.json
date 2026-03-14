@@ -1,0 +1,33 @@
+{
+  "name": "everything-claude-marketing",
+  "version": "1.0.0",
+  "description": "The complete marketing intelligence system for Claude Code — 18 agents, 72 skills, 22 commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/run-all.js",
+    "validate": "node scripts/ci/validate-all.js"
+  },
+  "keywords": [
+    "claude-code",
+    "marketing",
+    "agents",
+    "skills",
+    "brand",
+    "seo",
+    "content",
+    "growth",
+    "analytics",
+    "email-marketing",
+    "paid-ads",
+    "social-media",
+    "copywriting",
+    "pr",
+    "cro"
+  ],
+  "author": "Henrik",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

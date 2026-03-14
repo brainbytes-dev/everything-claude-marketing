@@ -1,0 +1,31 @@
+{
+  "name": "everything-claude-marketing",
+  "version": "1.0.0",
+  "description": "Complete collection of production-ready marketing agents, skills, hooks, and commands — 18 specialized agents, 55+ skills, 22 commands covering every marketing discipline from brand strategy to growth hacking",
+  "author": {
+    "name": "Henrik",
+    "url": ""
+  },
+  "homepage": "",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "marketing",
+    "agents",
+    "skills",
+    "hooks",
+    "commands",
+    "brand",
+    "seo",
+    "content-marketing",
+    "copywriting",
+    "growth",
+    "analytics",
+    "social-media",
+    "email-marketing",
+    "paid-ads",
+    "pr",
+    "cro"
+  ]
+}

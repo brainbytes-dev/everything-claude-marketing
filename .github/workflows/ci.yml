@@ -1,0 +1,57 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate agents
+        run: |
+          echo "Checking agent files..."
+          errors=0
+          for f in agents/*.md; do
+            if ! head -1 "$f" | grep -q "^---"; then
+              echo "ERROR: $f missing YAML frontmatter"
+              errors=$((errors + 1))
+            fi
+          done
+          if [ $errors -gt 0 ]; then exit 1; fi
+          echo "All agent files valid"
+
+      - name: Validate skills
+        run: |
+          echo "Checking skill files..."
+          errors=0
+          for f in $(find skills -name "SKILL.md"); do
+            if ! head -1 "$f" | grep -q "^---"; then
+              echo "ERROR: $f missing YAML frontmatter"
+              errors=$((errors + 1))
+            fi
+          done
+          if [ $errors -gt 0 ]; then exit 1; fi
+          echo "All skill files valid"
+
+      - name: Validate commands
+        run: |
+          echo "Checking command files..."
+          errors=0
+          for f in commands/*.md; do
+            if ! head -1 "$f" | grep -q "^---"; then
+              echo "ERROR: $f missing YAML frontmatter"
+              errors=$((errors + 1))
+            fi
+          done
+          if [ $errors -gt 0 ]; then exit 1; fi
+          echo "All command files valid"
+
+      - name: Asset inventory
+        run: |
+          echo "=== Everything Claude Marketing ==="
+          echo "Agents:   $(ls agents/*.md 2>/dev/null | wc -l | tr -d ' ')"
+          echo "Skills:   $(find skills -name 'SKILL.md' 2>/dev/null | wc -l | tr -d ' ')"
+          echo "Commands: $(ls commands/*.md 2>/dev/null | wc -l | tr -d ' ')"
+          echo "Rules:    $(find rules -name '*.md' 2>/dev/null | wc -l | tr -d ' ')"
+          echo "Hooks:    $(ls scripts/hooks/*.js 2>/dev/null | wc -l | tr -d ' ')"

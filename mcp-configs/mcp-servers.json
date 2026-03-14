@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": { "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_KEY_HERE" },
+      "description": "Web scraping for competitor research and content analysis"
+    },
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "exa-mcp-server"],
+      "env": { "EXA_API_KEY": "YOUR_EXA_KEY_HERE" },
+      "description": "Neural search for market research and trend analysis"
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE" },
+      "description": "GitHub operations for content management and collaboration"
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "Persistent memory for brand guidelines and campaign context"
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "description": "Chain-of-thought reasoning for strategy and planning"
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"],
+      "description": "Up-to-date documentation for marketing tools and APIs"
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-slack"],
+      "env": { "SLACK_BOT_TOKEN": "YOUR_SLACK_TOKEN_HERE" },
+      "description": "Slack for team communication and content approvals"
+    },
+    "google-drive": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-google-drive"],
+      "env": { "GOOGLE_CREDENTIALS_PATH": "YOUR_CREDENTIALS_PATH_HERE" },
+      "description": "Google Drive for brand assets, content docs, and campaign briefs"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-playwright"],
+      "description": "Browser automation for landing page testing and competitive research"
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "notion-mcp-server"],
+      "env": { "NOTION_API_KEY": "YOUR_NOTION_KEY_HERE" },
+      "description": "Notion for content calendars, campaign tracking, and wikis"
+    }
+  }
+}

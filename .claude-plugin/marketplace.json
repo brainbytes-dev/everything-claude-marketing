@@ -1,0 +1,47 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "everything-claude-marketing",
+  "description": "Production-ready marketing intelligence plugin — 18 specialized agents, 55+ domain skills, and 22 commands covering every marketing discipline",
+  "owner": {
+    "name": "Henrik",
+    "email": ""
+  },
+  "metadata": {
+    "description": "The most comprehensive Claude Code marketing plugin — specialized agents for strategy, brand, content, SEO, social, email, paid ads, analytics, growth, PR, product marketing, CRO, and research"
+  },
+  "plugins": [
+    {
+      "name": "everything-claude-marketing",
+      "source": "./",
+      "description": "18 specialized marketing agents, 55+ skills, 22 commands, and production-ready hooks for campaign planning, copywriting, SEO, analytics, and growth experimentation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Henrik"
+      },
+      "license": "MIT",
+      "keywords": [
+        "marketing",
+        "agents",
+        "skills",
+        "brand",
+        "seo",
+        "content",
+        "growth",
+        "analytics"
+      ],
+      "category": "workflow",
+      "tags": [
+        "marketing",
+        "agents",
+        "skills",
+        "commands",
+        "brand",
+        "seo",
+        "copywriting",
+        "analytics",
+        "growth"
+      ],
+      "strict": false
+    }
+  ]
+}

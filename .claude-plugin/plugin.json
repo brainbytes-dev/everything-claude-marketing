@@ -4,10 +4,10 @@
   "description": "Complete collection of production-ready marketing agents, skills, hooks, and commands — 18 specialized agents, 55+ skills, 22 commands covering every marketing discipline from brand strategy to growth hacking",
   "author": {
     "name": "Brain Bytes",
-    "url": ""
+    "url": "https://github.com/brainbytes-dev"
   },
-  "homepage": "",
-  "repository": "",
+  "homepage": "https://github.com/brainbytes-dev/everything-claude-marketing",
+  "repository": "https://github.com/brainbytes-dev/everything-claude-marketing",
   "license": "MIT",
   "keywords": [
     "claude-code",
